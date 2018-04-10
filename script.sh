@@ -5,4 +5,6 @@
 
 if [[ $(( $2%3)) == 0 ]] ; then
     echo The running job is: $1;
+else
+    exit 1;
 fi;
